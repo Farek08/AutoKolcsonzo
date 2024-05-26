@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "bcab272f-2fdf-413e-8803-f66d870b05e8",
+		"name": "Backend teszt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16408305"
+	},
+	"item": [
+		{
+			"name": "/api/datas/:locationId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/viewpoints/63aaa84f6738288e2abd1510",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"datas",
+						"63aaa84f6738288e2abd1510"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/datas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"viewpointName\": \"Magas-hegyi kilátó\",\r\n   \"mountain\": \"Magas-hegy\",\r\n   \"location\": \"63aaa84f6738288e2abd1514\",\r\n   \"height\": 22.66,\r\n   \"description\": \" Az építmény fedett kémlelőszintjéről körpanorámát kapunk, és az ország északkeleti szegletének jelentős részét feltérképezhetjük.\",\r\n   \"built\": \"2010-05-23\",\r\n   \"imageUrl\": \"http://elit.jedlik.eu/viewpoints/magashegy.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/datas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"datas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/datas/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"height\": 30.0,\r\n  \"built\": \"2015-05-04\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/datas/63ab4379404fabf61f533e71",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"datas",
+						"63ab4379404fabf61f533e71"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
